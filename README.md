@@ -18,14 +18,6 @@ go run src/main.go
 ```shell
 # go代码统一风格格式化， -w 后面指定文件，格式化指定文件；放 . 则表示格式化整个目录
 gofmt -l -w .
-
-# docker 运行环境
-docker pull alpine:3.15
-
-# docker 打包；（提前拉取以上两个镜像加快重复打包的速度）
-docker build -t roseta_dex_server:latest -f docker/Dockerfile.dev .
-
-
 ```
 
 #### 项目结构说明
